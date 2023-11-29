@@ -568,8 +568,8 @@ function getMaxNumber(firstNumber, secondNumber) {
  * -5, 0 => -5 | -4 | -3 | -2 | -1 | 0
  * -1, 1 => -1 | 0 | 1
  */
-function getRandomInteger(min, max ) {
-  let res = min + Math.random() * (max + 1 - min);
+function getRandomInteger(min, max) {
+  const res = min + Math.random() * (max + 1 - min);
   return Math.floor(res);
 }
 
@@ -583,7 +583,7 @@ function getRandomInteger(min, max ) {
  * @example:
  * 3, 4 => 5
  */
-function getHypotenuse(/* a, b */) {
+function getHypotenuse(a, b) {
   return Math.hypot(a, b);
 }
 
